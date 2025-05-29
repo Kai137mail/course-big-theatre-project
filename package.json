@@ -1,0 +1,27 @@
+{
+  "name": "course-big-theatre-project",
+  "version": "1.0.0",
+  "description": "Проект Большой театр Разработчик: Жиратков В.А. Стек:  Запуск:",
+  "homepage": "https://github.com/Kai137mail/course-big-theatre-project#readme",
+  "bugs": {
+    "url": "https://github.com/Kai137mail/course-big-theatre-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kai137mail/course-big-theatre-project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "no test",
+    "css": "gulp css"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.89.0"
+  }
+}
