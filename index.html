@@ -20,7 +20,7 @@
         <a class="header__tel" href="tel:+7 495 123-45-67">+7 495 123-45-67</a>
         <h1 class="header__title">Большой театр</h1>
         <p class="header__desc">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
-        <a class="header__link-poster" href="#"></a>
+        <a class="header__link-poster btn" href="#"></a>
         <img src="" alt="Большой театр">
         <button class="header__button" type="button">пред</button>
         <button class="header__button" type="button">след</button>
@@ -50,64 +50,84 @@
         </section>
         <section class="projects">
             <h2 class="projects__title section-title">наши постановки</h2>
-            <ul class="projects__list">
-                <li class="projects__item">
-                    ОСКАР 2020
+            <div class="projects__list">
+                <div class="projects__item">
+                    <h3 class="projects_item-title">ОСКАР 2020</h3>
+                </div>
+            </div>
+            <div class="projects__list">
+                <div class="projects__item">
+                    <h3 class="projects_item-title">золотой грамофон</h3>
+                </div>
+            </div>
+            <div class="projects__list">
+                <div class="projects__item">
+                    <h3 class="projects_item-title">золотой грамофон</h3>
+                </div>
+            </div>
+        </section>
+        <section class="stars">
+            <ul class="stars__year-list">
+                <li class="stars__year-item">
+                    2018
+                </li class="stars__year-item">
+                <li>
+                    2019
                 </li>
-                <li class="projects__item">
-                    золотой грамофон
-                </li>
-                <li class="projects__item">
-                    золотой грамофон
+                <li class="stars__year-item">
+                    2020
                 </li>
             </ul>
-        </section>
-        <section class="raiting">
-            <div class="raiting__stars">
+            <div class="stars__img">
                 <img src="" alt="star">
                 <img src="" alt="star">
                 <img src="" alt="star">
                 <img src="" alt="star">
                 <img src="" alt="star">
             </div>
-            <ul class="raiting__years">
-                <li class="raiting__year">2018 2019 2020</li>
-            </ul>
-            <p class="raiting__wrp">Лучший театр по мнению театральных критиков Парижа</p>
+            <p class="stars__title">Лучший театр по мнению театральных критиков Парижа</p>
         </section>
         <section class="partners">
             <h2 class="patrners__title">партнеры театра</h2>
-            <div class="partners__img">
-                <img src="" alt="logo">
-                <img src="" alt="logo">
-                <img src="" alt="logo">
-                <img src="" alt="logo">
+            <ul class="partners__list">
+                <li class="partners__item">
+                    <img src="" alt="logo">
+                </li>
+                <li class="partners__item">
+                    <img src="" alt="logo">
+                </li>
+                <li class="partners__item">
+                    <img src="" alt="logo">
+                </li>
+                <li class="partners__item">
+                    <img src="" alt="logo">
+                </li>
             </ul>
-            <button class="button">Стать меценатом</button>
+            <button class="partners__btn btn">Стать меценатом</button>
         </section>
     </main>
 
     <footer class="footer">
-        <section>
-            <h2 class="footer__title">Контакты</h2>
-            <ul class="footer__contacts"></ul>
-            <li class="footer__contacts-item">
-                +7 (812) 123-45-55
+
+        <h2 class="footer__title">Контакты</h2>
+        <ul class="footer__contacts-list">
+            <li>
+                <a  class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
             </li>
-            <li class="footer__contacts-item">
-                +7 (812) 123-45-66
+            <li>
+                <a  class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
             </li>
-            <li class="footer__contacts-item">
-                info@theater.ru
+            <li>
+                <a  class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
             </li>
-            <li class="footer__contacts-item">
-                г. санкт-петербург, невский 140
+            <li>
+                <address class="footer__contacts-item-desc" >г. санкт-петербург, невский 140</address>
             </li>
-        </section>
-        <section>
-            <p>(с) Все права защищены. Большой театр. 2020</p>
-            <p>Разработано d-e-n.ru</p>
-        </section>
+        </ul>
+        <div class="footer__author-desc">
+            <p class="footer__author-desc-content">(с) Все права защищены. Большой театр. 2020</p>
+            <a class="footer__author-desc-link" href="#">Разработано d-e-n.ru</a>
+        </div>
     </footer>
     <div class="popup">
         <button class="popup__close" type="button">x</button>
@@ -130,7 +150,7 @@
             </label>
             <textarea class="popup__input-field popup__input-field--textarea" placeholder="Сообщение "></textarea>
             <p class="popup__hint">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
-            <button class="popup__button button"></button>
+            <button class="popup__btn btn"></button>
         </form>
     </div>
 </body>
