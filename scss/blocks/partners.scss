@@ -1,0 +1,9 @@
+@use "mixins";
+
+.partners {
+    .patrners__title {
+        text-transform: uppercase;
+        @include mixins.font-mixin(48px, $font-weight-param: 300);
+        letter-spacing: 0.1rem;
+    }
+}

@@ -1,0 +1,12 @@
+@use "mixins";
+@use "variables" as *;
+
+.popup {
+    .popup__label,
+    .popup__hint {
+        font-family: $font-family;
+        color: $gray;
+        @include mixins.font-mixin(14px, 150%, 400);
+        letter-spacing: 0rem;
+    }
+}

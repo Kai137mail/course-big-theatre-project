@@ -1,0 +1,17 @@
+@use "variables" as *;
+@use "mixins";
+
+.footer {
+    .footer__title {
+        text-transform: uppercase;
+        color: $gold;
+        @include mixins.font-mixin(48px, $font-weight-param: 300);
+        letter-spacing: 0.1rem;
+    }
+
+    .footer__contacts-item-desc {
+        text-transform: uppercase;
+        @include mixins.font-mixin(21px);
+        letter-spacing: 0.1rem;
+    }
+}

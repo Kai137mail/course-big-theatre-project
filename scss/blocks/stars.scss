@@ -1,0 +1,21 @@
+@use "mixins";
+@use "variables" as *;
+
+.stars {
+    .stars__year-item {
+        text-transform: uppercase;
+        @include mixins.font-mixin(72px);
+        letter-spacing: 0.1rem;
+        color: $gold;
+    }
+    
+    .stars__img {
+        color: $gold;
+    }
+
+    .stars__title {
+        font-family: $font-family;
+        @include mixins.font-mixin(36px, 150%);
+        letter-spacing: 0rem;
+    }
+}

@@ -1,0 +1,26 @@
+@use "mixins";
+@use "variables" as *;
+
+.header {
+    .header__nav-link {
+        text-transform: uppercase;
+        @include mixins.font-mixin(17px);
+    }
+
+    .header__tel {
+        @include mixins.font-mixin();
+        letter-spacing: 0.05rem;
+    }
+
+    .header__title {
+        text-transform: uppercase;
+        @include mixins.font-mixin(64px);
+        letter-spacing: 0.1rem;
+    }
+
+    .header__desc {
+        font-family: $font-family;
+        @include mixins.font-mixin(14px, 150%, 400);
+        letter-spacing: 0rem;
+    }
+}

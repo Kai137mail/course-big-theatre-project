@@ -1,0 +1,9 @@
+@use "mixins";
+
+.projects {
+    .projects_item-title {
+        text-transform: uppercase;
+        @include mixins.font-mixin(24px);
+        letter-spacing: 0.05rem;
+    }
+}

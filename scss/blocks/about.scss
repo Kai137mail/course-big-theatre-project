@@ -1,0 +1,25 @@
+@use "mixins";
+@use "variables" as *;
+
+.about {
+    .about__subtitle {
+        text-transform: uppercase;
+        @include mixins.font-mixin(21px);
+    }
+
+    .about__desc {
+        font-family: $font-family;
+        @include mixins.font-mixin($line-height-param: 150%, $font-weight-param: 400);
+        letter-spacing: 0rem;
+    }
+
+    .about__subtitle {
+        text-transform: uppercase;
+        @include mixins.font-mixin(21px);
+        letter-spacing: 0.1rem;
+    }
+
+    .digits__desc-orange {
+        color: $gold
+    }
+}
