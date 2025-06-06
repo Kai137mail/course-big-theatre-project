@@ -1,9 +1,19 @@
-$primary-color: #333;
+@use "./variables.scss";
 
-body {
-    background-color: $primary-color;
-}
+@use "./fonts.scss";
 
-h1 {
-    color: whitesmoke
-}
+@use "./reset.scss";
+
+@use "./mixins.scss";
+
+@use "./general.scss";
+
+@use "./blocks/digits.scss";
+@use "./blocks/header.scss";
+@use "./blocks/about.scss";
+@use "./blocks/btn.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/partners.scss";
+@use "./blocks/popup.scss";
+@use "./blocks/projects.scss";
+@use "./blocks/stars.scss";

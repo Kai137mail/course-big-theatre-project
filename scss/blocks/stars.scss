@@ -1,0 +1,22 @@
+@use "mixins";
+@use "variables" as *;
+
+.stars {
+    background-image: url("../../img/webp/stars_fon.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .stars__year-item {
+        text-transform: uppercase;
+        @include mixins.font-mixin(72px);
+        letter-spacing: 0.1rem;
+        color: $gold;
+    }
+
+    .stars__title {
+        font-family: $font-family;
+        @include mixins.font-mixin(36px, 150%);
+        letter-spacing: 0rem;
+    }
+}

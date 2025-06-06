@@ -1,0 +1,39 @@
+@use "mixins";
+@use "variables" as *;
+
+.header {
+    background: url("../../img/webp/big_theatre_fon.webp");
+    background-color: $gray-bkg;
+
+    .header__nav-link {
+        text-transform: uppercase;
+        @include mixins.font-mixin(17px);
+    }
+
+    .header__tel {
+        @include mixins.font-mixin();
+        letter-spacing: 0.05rem;
+    }
+
+    .header__title {
+        text-transform: uppercase;
+        @include mixins.font-mixin(64px);
+        letter-spacing: 0.1rem;
+    }
+
+    .header__desc {
+        font-family: $font-family;
+        @include mixins.font-mixin(14px, 150%, 400);
+        letter-spacing: 0rem;
+    }
+
+    .header__btn {
+        color: inherit;
+        padding: 0;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        @include mixins.font-mixin(18px);
+        letter-spacing: 0.1rem;
+    }
+}

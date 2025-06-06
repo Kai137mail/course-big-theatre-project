@@ -1,0 +1,31 @@
+@use "mixins";
+@use "variables" as *;
+
+.popup {
+    input::placeholder,
+    textarea::placeholder {
+        font-family: $font-family;
+        color: $gray;
+        @include mixins.font-mixin(14px, 150%, 400);
+        letter-spacing: 0rem;
+    }
+
+    input,
+    textarea {
+        background-color: $wet-gray;
+        border: 1px, $border-gray;
+    }
+
+    .popup__hint {
+    font-family: $font-family;
+    color: $gray;
+    @include mixins.font-mixin(14px, 150%, 400);
+    letter-spacing: 0rem;
+    }
+
+    .popup__close-btn {
+        background: transparent;
+        border: none;
+        color: inherit;
+    }
+}

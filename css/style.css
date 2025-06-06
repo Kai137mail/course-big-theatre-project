@@ -1,7 +1,294 @@
-body {
-  background-color: #333;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/opensans_condensed-bold.woff2") format("woff2"), url("../fonts/opensans_condensed-bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sans Condensed";
+  src: url("../fonts/opensans_condensed-light.woff2") format("woff2"), url("../fonts/opensans_condensed-light.woff") format("woff");
+  font-weight: 300;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-h1 {
-  color: whitesmoke;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  background: #333333;
+  color: #FFFFFF;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  background: #D1A954;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.section-title-orange {
+  color: #D1A954;
+}
+
+textarea {
+  resize: none;
+}
+
+.digits__desc-orange {
+  color: #D1A954;
+}
+
+.header {
+  background: url("../../img/webp/big_theatre_fon.webp");
+  background-color: #808080;
+}
+.header .header__nav-link {
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.header .header__tel {
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+.header .header__title {
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.header .header__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.header .header__btn {
+  color: inherit;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.about .about__subtitle {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: 700;
+}
+.about .about__desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.about .about__subtitle {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.btn {
+  border: none;
+  background-color: #D1A954;
+  width: 359px;
+  min-height: 72px;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.footer .footer__contacts-item-desc {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.footer .footer__author-desc {
+  font-family: "Open Sans", sans-serif;
+  color: #989898;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+.partners .patrners__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.popup input::placeholder,
+.popup textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: #989898;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.popup input,
+.popup textarea {
+  background-color: #444444;
+  border: 1px, #616161;
+}
+.popup .popup__hint {
+  font-family: "Open Sans", sans-serif;
+  color: #989898;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.popup .popup__close-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
+}
+
+.projects .projects_item-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+.projects .projects_item-title {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.projects .projects_item-title--oscar {
+  background-image: url("../../img/webp/oscar.webp");
+}
+.projects .projects_item-title--goldgram1 {
+  background-image: url("../../img/webp/gold_gram_1.webp");
+}
+.projects .projects_item-title--goldgram2 {
+  background-image: url("../../img/webp/gold_gram_2.webp");
+}
+
+.stars {
+  background-image: url("../../img/webp/stars_fon.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.stars .stars__year-item {
+  text-transform: uppercase;
+  font-size: 72px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #D1A954;
+}
+.stars .stars__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+  font-weight: 700;
+  letter-spacing: 0rem;
 }
