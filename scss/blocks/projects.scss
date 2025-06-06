@@ -6,4 +6,22 @@
         @include mixins.font-mixin(24px);
         letter-spacing: 0.05rem;
     }
+
+    .projects_item-title {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &--oscar {
+            background-image: url("../../img/webp/oscar.webp");
+        }
+
+        &--goldgram1 {
+            background-image: url("../../img/webp/gold_gram_1.webp");
+        }
+
+        &--goldgram2 {
+            background-image: url("../../img/webp/gold_gram_2.webp");
+        }
+    }
 }

@@ -101,6 +101,18 @@ a {
   color: #D1A954;
 }
 
+textarea {
+  resize: none;
+}
+
+.digits__desc-orange {
+  color: #D1A954;
+}
+
+.header {
+  background: url("../../img/webp/big_theatre_fon.webp");
+  background-color: #808080;
+}
 .header .header__nav-link {
   text-transform: uppercase;
   font-size: 17px;
@@ -127,6 +139,17 @@ a {
   font-weight: 400;
   letter-spacing: 0rem;
 }
+.header .header__btn {
+  color: inherit;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
 
 .about .about__subtitle {
   text-transform: uppercase;
@@ -148,29 +171,46 @@ a {
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
-.about .digits__desc-orange {
-  color: #D1A954;
-}
 
-button {
+.btn {
+  border: none;
+  background-color: #D1A954;
+  width: 359px;
+  min-height: 72px;
   color: inherit;
+  text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .footer__title {
   text-transform: uppercase;
-  color: #D1A954;
   font-size: 48px;
   line-height: 100%;
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
 .footer .footer__contacts-item-desc {
+  font-style: normal;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.1rem;
+}
+.footer .footer__author-desc {
+  font-family: "Open Sans", sans-serif;
+  color: #989898;
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
 }
 
 .partners .patrners__title {
@@ -181,7 +221,20 @@ button {
   letter-spacing: 0.1rem;
 }
 
-.popup .popup__label,
+.popup input::placeholder,
+.popup textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: #989898;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+.popup input,
+.popup textarea {
+  background-color: #444444;
+  border: 1px, #616161;
+}
 .popup .popup__hint {
   font-family: "Open Sans", sans-serif;
   color: #989898;
@@ -189,6 +242,11 @@ button {
   line-height: 150%;
   font-weight: 400;
   letter-spacing: 0rem;
+}
+.popup .popup__close-btn {
+  background: transparent;
+  border: none;
+  color: inherit;
 }
 
 .projects .projects_item-title {
@@ -198,16 +256,33 @@ button {
   font-weight: 700;
   letter-spacing: 0.05rem;
 }
+.projects .projects_item-title {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.projects .projects_item-title--oscar {
+  background-image: url("../../img/webp/oscar.webp");
+}
+.projects .projects_item-title--goldgram1 {
+  background-image: url("../../img/webp/gold_gram_1.webp");
+}
+.projects .projects_item-title--goldgram2 {
+  background-image: url("../../img/webp/gold_gram_2.webp");
+}
 
+.stars {
+  background-image: url("../../img/webp/stars_fon.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .stars .stars__year-item {
   text-transform: uppercase;
   font-size: 72px;
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  color: #D1A954;
-}
-.stars .stars__img {
   color: #D1A954;
 }
 .stars .stars__title {

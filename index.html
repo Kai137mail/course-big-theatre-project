@@ -22,8 +22,8 @@
         <p class="header__desc">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
         <a class="header__link-poster btn" href="#">афиша</a>
         <img src="./img/webp/big_theatre.webp" alt="Большой театр">
-        <button class="header__button" type="button">пред</button>
-        <button class="header__button" type="button">след</button>
+        <button class="header__btn" type="button">пред</button>
+        <button class="header__btn" type="button">след</button>
     </header>
 
     <main>
@@ -50,24 +50,26 @@
                 <img src="./img/webp/about_theatre.webp" alt="photo">
             </div>
         </section>
+
         <section class="projects">
             <h2 class="projects__title section-title"><span class="section-title-orange">наши</span> постановки</h2>
             <div class="projects__list">
                 <div class="projects__item">
-                    <h3 class="projects_item-title">ОСКАР 2020</h3>
+                    <h3 class="projects_item-title projects_item-title--oscar">ОСКАР 2020</h3>
                 </div>
             </div>
             <div class="projects__list">
                 <div class="projects__item">
-                    <h3 class="projects_item-title">золотой грамофон</h3>
+                    <h3 class="projects_item-title projects_item-title--goldgram1">золотой грамофон</h3>
                 </div>
             </div>
             <div class="projects__list">
                 <div class="projects__item">
-                    <h3 class="projects_item-title">золотой грамофон</h3>
+                    <h3 class="projects_item-title projects_item-title--goldgram2">золотой грамофон</h3>
                 </div>
             </div>
         </section>
+
         <section class="stars">
             <ul class="stars__year-list">
                 <li class="stars__year-item">
@@ -89,20 +91,21 @@
             </div>
             <p class="stars__title">Лучший театр по мнению театральных критиков Парижа</p>
         </section>
+
         <section class="partners">
             <h2 class="patrners__title"><span class="section-title-orange">партнеры</span> театра</h2>
             <ul class="partners__list">
                 <li class="partners__item">
-                    <img src="./img/webp/partners_logo.webp" alt="logo">
+                    <img src="./img/webp/partners_logo.webp" alt="partner-logo-1">
                 </li>
                 <li class="partners__item">
-                    <img src="./img/webp/partners_logo.webp" alt="logo">
+                    <img src="./img/webp/partners_logo.webp" alt="partner-logo-2">
                 </li>
                 <li class="partners__item">
-                    <img src="./img/webp/partners_logo.webp" alt="logo">
+                    <img src="./img/webp/partners_logo.webp" alt="partner-logo-3">
                 </li>
                 <li class="partners__item">
-                    <img src="./img/webp/partners_logo.webp" alt="logo">
+                    <img src="./img/webp/partners_logo.webp" alt="partner-logo-4">
                 </li>
             </ul>
             <button class="partners__btn btn">Стать меценатом</button>
@@ -111,7 +114,7 @@
 
     <footer class="footer">
 
-        <h2 class="footer__title">Контакты</h2>
+        <h2 class="footer__title section-title section-title-orange">Контакты</h2>
         <ul class="footer__contacts-list">
             <li>
                 <a  class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
@@ -127,12 +130,13 @@
             </li>
         </ul>
         <div class="footer__author-desc">
-            <p class="footer__author-desc-content">(с) Все права защищены. Большой театр. 2020</p>
-            <a class="footer__author-desc-link" href="#">Разработано d-e-n.ru</a>
+            <p class="footer__author-desc">(с) Все права защищены. Большой театр. 2020</p>
+            <a class="footer__author-desc footer__author-desc--link" href="#">Разработано d-e-n.ru</a>
         </div>
     </footer>
+
     <div class="popup">
-        <button class="popup__close" type="button">x</button>
+        <button class="popup__close-btn" type="button">x</button>
         <form class="popup__form" action="#">
             <label class="popup__label">
                 <span>Имя</span>
@@ -150,7 +154,10 @@
                 <span>E-mail</span>
                 <input class="popup__input-field" type="email" placeholder="E-mail">
             </label>
-            <textarea class="popup__input-field popup__input-field--textarea" placeholder="Сообщение "></textarea>
+            <label>
+                <span>Сообщение</span>
+                <textarea class="popup__input-field popup__input-field--textarea" placeholder="Сообщение "></textarea>
+            </label>
             <p class="popup__hint">* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
             <button class="popup__btn btn">отправить</button>
         </form>

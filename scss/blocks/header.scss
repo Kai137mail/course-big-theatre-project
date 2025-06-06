@@ -2,6 +2,9 @@
 @use "variables" as *;
 
 .header {
+    background: url("../../img/webp/big_theatre_fon.webp");
+    background-color: $gray-bkg;
+
     .header__nav-link {
         text-transform: uppercase;
         @include mixins.font-mixin(17px);
@@ -22,5 +25,15 @@
         font-family: $font-family;
         @include mixins.font-mixin(14px, 150%, 400);
         letter-spacing: 0rem;
+    }
+
+    .header__btn {
+        color: inherit;
+        padding: 0;
+        border: none;
+        background: transparent;
+        text-transform: uppercase;
+        @include mixins.font-mixin(18px);
+        letter-spacing: 0.1rem;
     }
 }

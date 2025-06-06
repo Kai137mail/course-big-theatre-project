@@ -4,14 +4,21 @@
 .footer {
     .footer__title {
         text-transform: uppercase;
-        color: $gold;
         @include mixins.font-mixin(48px, $font-weight-param: 300);
         letter-spacing: 0.1rem;
     }
 
     .footer__contacts-item-desc {
+        font-style: normal;
         text-transform: uppercase;
         @include mixins.font-mixin(21px);
         letter-spacing: 0.1rem;
+    }
+
+    .footer__author-desc {
+        font-family: $font-family;
+        color: $gray;
+        @include mixins.font-mixin(12px, 150%, 400);
+        letter-spacing: 0rem;
     }
 }
