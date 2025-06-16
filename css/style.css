@@ -90,6 +90,7 @@ a {
 }
 
 .section-title {
+  text-align: center;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 100%;
@@ -105,6 +106,11 @@ textarea {
   resize: none;
 }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
 .digits__desc-orange {
   color: #D1A954;
 }
@@ -112,6 +118,15 @@ textarea {
 .header {
   background: url("../../img/webp/big_theatre_fon.webp");
   background-color: #808080;
+  padding: 50px 0 179px;
+}
+.header .header__nav-wrp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 219px;
+}
+.header .header__nav-list {
+  display: flex;
 }
 .header .header__nav-link {
   text-transform: uppercase;
@@ -119,11 +134,22 @@ textarea {
   line-height: 100%;
   font-weight: 700;
 }
+.header .header__nav-item:nth-of-type(n+2) {
+  margin-left: 63px;
+}
 .header .header__tel {
   font-size: 16px;
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.05rem;
+}
+.header .header__content-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__content {
+  width: 540px;
+  padding: 88px 0 0;
 }
 .header .header__title {
   text-transform: uppercase;
@@ -131,6 +157,7 @@ textarea {
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  margin: 0 0 50px;
 }
 .header .header__desc {
   font-family: "Open Sans", sans-serif;
@@ -138,6 +165,16 @@ textarea {
   line-height: 150%;
   font-weight: 400;
   letter-spacing: 0rem;
+  margin: 0 0 50px;
+}
+.header .header__slider-img {
+  width: 370;
+  height: 570;
+  margin: 0 0 36px;
+}
+.header .header__btn-wrp {
+  display: flex;
+  justify-content: space-between;
 }
 .header .header__btn {
   color: inherit;
@@ -151,6 +188,26 @@ textarea {
   letter-spacing: 0.1rem;
 }
 
+.about {
+  padding: 150px 0 0;
+}
+.about .about__title {
+  margin: 0 0 100px;
+}
+.about .about__wpr {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about__item-content {
+  width: 449px;
+}
+.about .about__item-digits {
+  width: 258px;
+}
+.about .about__img {
+  width: 369;
+  height: 323;
+}
 .about .about__subtitle {
   text-transform: uppercase;
   font-size: 21px;
@@ -170,6 +227,10 @@ textarea {
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  margin: 0 0 18px;
+}
+.about .about__subtitle--digits {
+  margin: 0 0 60px;
 }
 
 .btn {
@@ -249,7 +310,20 @@ textarea {
   color: inherit;
 }
 
+.projects {
+  padding: 119px;
+}
+.projects .projects__title {
+  margin: 0 0 113px;
+}
+.projects .project__wrp {
+  display: flex;
+  justify-content: space-between;
+}
 .projects .projects_item-title {
+  width: 369px;
+  height: 478px;
+  padding: 34px;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 100%;
@@ -272,10 +346,16 @@ textarea {
 }
 
 .stars {
+  padding: 209px 25px;
+}
+.stars .stars-wrp {
   background-image: url("../../img/webp/stars_fon.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 126px 165px;
+  display: flex;
+  justify-content: space-between;
 }
 .stars .stars__year-item {
   text-transform: uppercase;
@@ -284,6 +364,14 @@ textarea {
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #D1A954;
+  margin: 0 0 25px;
+}
+.stars .stars__content-wrp {
+  width: 540px;
+}
+.stars .stars__img {
+  padding: 7px 0 0;
+  margin: 0 0 31px;
 }
 .stars .stars__title {
   font-family: "Open Sans", sans-serif;
@@ -291,4 +379,7 @@ textarea {
   line-height: 150%;
   font-weight: 700;
   letter-spacing: 0rem;
+}
+.stars .stars__title-line {
+  display: block;
 }
