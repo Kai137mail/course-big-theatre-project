@@ -1,7 +1,20 @@
 @use "mixins";
 
 .projects {
+    padding: 119px;
+
+    .projects__title {
+        margin: 0 0 113px;
+    }
+
+    .project__wrp {
+        @include mixins.flex-space-between;
+    }
+
     .projects_item-title {
+        width: 369px;
+        height: 478px;
+        padding: 34px; 
         text-transform: uppercase;
         @include mixins.font-mixin(24px);
         letter-spacing: 0.05rem;

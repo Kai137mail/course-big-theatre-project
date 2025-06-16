@@ -4,10 +4,25 @@
 .header {
     background: url("../../img/webp/big_theatre_fon.webp");
     background-color: $gray-bkg;
+    padding: 50px 0 179px;
+
+
+    .header__nav-wrp {
+        @include mixins.flex-space-between();
+        margin: 0 0 219px;
+    }
+
+    .header__nav-list {
+        display: flex;
+    }
 
     .header__nav-link {
         text-transform: uppercase;
         @include mixins.font-mixin(17px);
+    }
+
+    .header__nav-item:nth-of-type(n+2) {
+        margin-left: 63px;
     }
 
     .header__tel {
@@ -15,16 +30,37 @@
         letter-spacing: 0.05rem;
     }
 
+    .header__content-wrp {
+        @include mixins.flex-space-between();
+    }
+
+    .header__content {
+        width: 540px;
+        padding: 88px 0 0;
+    }
+
     .header__title {
         text-transform: uppercase;
         @include mixins.font-mixin(64px);
         letter-spacing: 0.1rem;
+        margin: 0 0 50px;
     }
 
     .header__desc {
         font-family: $font-family;
         @include mixins.font-mixin(14px, 150%, 400);
         letter-spacing: 0rem;
+        margin: 0 0 50px;
+    }
+
+    .header__slider-img {
+        width: 370;
+        height: 570;
+        margin: 0 0 36px;
+    }
+
+    .header__btn-wrp {
+        @include mixins.flex-space-between();
     }
 
     .header__btn {

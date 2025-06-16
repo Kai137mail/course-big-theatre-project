@@ -22,6 +22,7 @@ a {
 }
 
 .section-title {
+    text-align: center;
     text-transform: uppercase;
     @include mixins.font-mixin(48px, $font-weight-param: 300);
     letter-spacing: 0.1rem;
@@ -33,4 +34,9 @@ a {
 
 textarea {
     resize: none;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
 }

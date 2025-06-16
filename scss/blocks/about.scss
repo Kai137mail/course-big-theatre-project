@@ -2,6 +2,29 @@
 @use "variables" as *;
 
 .about {
+    padding: 150px 0 0;
+
+    .about__title {
+        margin: 0 0 100px;
+    }
+
+    .about__wpr {
+        @include mixins.flex-space-between;
+    }
+
+    .about__item-content {
+        width: 449px;
+    }
+
+    .about__item-digits {
+        width: 258px;
+    }
+
+    .about__img {
+        width: 369;
+        height: 323;
+    }
+
     .about__subtitle {
         text-transform: uppercase;
         @include mixins.font-mixin(21px);
@@ -17,5 +40,10 @@
         text-transform: uppercase;
         @include mixins.font-mixin(21px);
         letter-spacing: 0.1rem;
+        margin: 0 0 18px;
+
+        &--digits {
+            margin: 0 0 60px;
+        }
     }
 }
