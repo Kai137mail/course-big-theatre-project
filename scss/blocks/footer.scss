@@ -2,10 +2,18 @@
 @use "mixins";
 
 .footer {
+    padding: 112px 0 0;
+
     .footer__title {
         text-transform: uppercase;
         @include mixins.font-mixin(48px, $font-weight-param: 300);
         letter-spacing: 0.1rem;
+        margin: 0 0 50px;
+    }
+
+    .footer__contacts-list {
+        @include mixins.flex-space-between;
+        margin: 0 0 100px;
     }
 
     .footer__contacts-item-desc {
@@ -15,10 +23,13 @@
         letter-spacing: 0.1rem;
     }
 
-    .footer__author-desc {
+    .footer__author-desc-wrp {
         font-family: $font-family;
+        padding: 30px 0 41px;
         color: $gray;
         @include mixins.font-mixin(12px, 150%, 400);
+        @include mixins.flex-space-between();
         letter-spacing: 0rem;
+        border-top: 1px solid $border-gray-footer;
     }
 }

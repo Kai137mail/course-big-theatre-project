@@ -2,6 +2,8 @@
 @use "variables" as *;
 
 .popup {
+    display: none;
+
     input::placeholder,
     textarea::placeholder {
         font-family: $font-family;

@@ -1,26 +1,21 @@
 @use "mixins";
 
 .projects {
-    padding: 119px;
+    padding: 119px 0 0;
 
     .projects__title {
         margin: 0 0 113px;
     }
 
-    .project__wrp {
-        @include mixins.flex-space-between;
+
+    .projects__list {
+        display: flex;
     }
 
-    .projects_item-title {
-        width: 369px;
-        height: 478px;
-        padding: 34px; 
-        text-transform: uppercase;
-        @include mixins.font-mixin(24px);
-        letter-spacing: 0.05rem;
-    }
-
-    .projects_item-title {
+    .projects__item {
+        width: 33%;
+        min-height: 478px;
+        padding: 34px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -28,13 +23,17 @@
         &--oscar {
             background-image: url("../../img/webp/oscar.webp");
         }
-
         &--goldgram1 {
             background-image: url("../../img/webp/gold_gram_1.webp");
         }
-
         &--goldgram2 {
             background-image: url("../../img/webp/gold_gram_2.webp");
         }
+    }
+
+    .projects__item-title {
+        text-transform: uppercase;
+        @include mixins.font-mixin(24px);
+        letter-spacing: 0.05rem;
     }
 }

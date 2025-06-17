@@ -1,9 +1,19 @@
 @use "mixins";
 
 .partners {
+    padding: 150px 0 0;
+
     .patrners__title {
-        text-transform: uppercase;
-        @include mixins.font-mixin(48px, $font-weight-param: 300);
-        letter-spacing: 0.1rem;
+        margin: 0 0 60px;
+    }
+
+    .partners__list {
+        @include mixins.flex-space-between;
+        margin: 0 0 113px;
+    }
+
+    .partners__btn {
+        margin: 0 auto;
+        // @include mixins.flex-center;
     }
 }
