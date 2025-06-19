@@ -3,6 +3,14 @@
 
 .footer {
     padding: 112px 0 0;
+    @include mixins.desctop-wide() {
+        padding: 62px 0 0;
+    }
+
+    .footer__contacts-wrp {
+        @include mixins.flex-space-between();
+        margin: 0 0 100px;
+    }
 
     .footer__title {
         text-transform: uppercase;
@@ -12,8 +20,22 @@
     }
 
     .footer__contacts-list {
-        @include mixins.flex-space-between;
-        margin: 0 0 100px;
+        @include mixins.flex-space-between();
+        @include mixins.desctop-wide() {
+            flex-direction: column;
+        }
+    }
+
+    .footer__contacts-list--tel {
+        width: 40%;
+        margin-right: 9%;
+    }
+
+    .footer__contacts-list--address {
+        width: 51%;
+        @include mixins.desctop-wide() {
+            align-items: end;
+        }
     }
 
     .footer__contacts-item-desc {
@@ -21,6 +43,12 @@
         text-transform: uppercase;
         @include mixins.font-mixin(21px);
         letter-spacing: 0.1rem;
+        @include mixins.desctop-wide() {
+            @include mixins.font-mixin();
+            letter-spacing: 0.05rem;
+            margin: 0 0 25px;
+            display: block;
+        }
     }
 
     .footer__author-desc-wrp {
