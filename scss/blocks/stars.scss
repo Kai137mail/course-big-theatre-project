@@ -3,6 +3,12 @@
 
 .stars {
     padding: 209px 25px 0;
+    width: 1110px;
+    margin: 0 auto;
+    @include mixins.desctop-wide() {
+        padding: 125px 0 0;
+        width: 100%;
+    }
 
     .stars-wrp {
         background-image: url("../../img/webp/stars_fon.webp");
@@ -23,17 +29,29 @@
 
     .stars__content-wrp {
         width: 540px;
+
+        @include mixins.desctop-wide() {
+            width: 457px;
+        }
     }
 
     .stars__img {
         padding: 7px 0 0;
         margin: 0 0 31px;
+
+        @include mixins.desctop-wide() {
+            margin: 0 0 20px;
+        }
     }
 
     .stars__title {
         font-family: $font-family;
         @include mixins.font-mixin(36px, 150%);
         letter-spacing: 0rem;
+
+        @include mixins.desctop-wide() {
+            @include mixins.font-mixin(34px, 150%);
+        }
     }
 
     .stars__title-line {

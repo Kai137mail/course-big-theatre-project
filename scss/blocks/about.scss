@@ -4,6 +4,10 @@
 .about {
     padding: 150px 0 0;
 
+    @include mixins.desctop-wide() {
+        padding: 144px 0 0;
+    }
+
     .about__title {
         margin: 0 0 100px;
     }
@@ -14,15 +18,27 @@
 
     .about__item-content {
         width: 449px;
+        
+        @include mixins.desctop-wide() {
+        width: 431px;
+        }
     }
 
     .about__item-digits {
         width: 258px;
+
+        @include mixins.desctop-wide() {
+        width: 208px;
+        }
     }
 
     .about__img {
         width: 369;
         height: 323;
+
+        @include mixins.desctop-wide() {
+        display: none;
+        }
     }
 
     .about__subtitle {
@@ -44,6 +60,13 @@
 
         &--digits {
             margin: 0 0 60px;
+        }
+
+        @include mixins.desctop-wide() {
+        margin: 0 0 55px;
+        &--digits {
+            margin: 0 0 72px;
+        }
         }
     }
 }

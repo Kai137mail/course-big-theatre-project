@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Big Theatre</title>
 </head>
 <body>
     <header class="header">
@@ -27,7 +27,7 @@
                     <p class="header__desc">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
                     <a class="header__link-poster btn" href="#">афиша</a>
                 </div>
-                <div>
+                <div class="header__slider">
                     <img class="header__slider-img" src="./img/webp/big_theatre.webp" alt="Большой театр">
                     <div class="header__btn-wrp">
                         <button class="header__btn" type="button">пред</button>
@@ -78,7 +78,7 @@
             </div>
         </section>
 
-        <section class="stars container">
+        <section class="stars">
             <div class="stars-wrp">
                 <ul class="stars__year-list">
                     <li class="stars__year-item">
@@ -127,20 +127,24 @@
     <footer class="footer container">
 
         <h2 class="footer__title section-title section-title-orange">Контакты</h2>
-        <ul class="footer__contacts-list">
-            <li>
-                <a  class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
-            </li>
-            <li>
-                <a  class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
-            </li>
-            <li>
-                <a  class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
-            </li>
-            <li>
-                <address class="footer__contacts-item-desc" >г. санкт-петербург, невский 140</address>
-            </li>
-        </ul>
+        <div class="footer__contacts-wrp">
+            <ul class="footer__contacts-list footer__contacts-list--tel">
+                <li>
+                    <a  class="footer__contacts-item-desc" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                </li>
+                <li>
+                    <a  class="footer__contacts-item-desc" href="tel:+78121234566">+7 (812) 123-45-66</a>
+                </li>
+            </ul>
+            <ul class="footer__contacts-list footer__contacts-list--address">
+                <li>
+                    <a  class="footer__contacts-item-desc" href="mailto:info@theater.ru">info@theater.ru</a>
+                </li>
+                <li>
+                    <address class="footer__contacts-item-desc" >г. санкт-петербург, невский 140</address>
+                </li>
+            </ul>
+        </div>
         <div class="footer__author-desc-wrp">
             <p class="footer__author-desc">(с) Все права защищены. Большой театр. 2020</p>
             <a class="footer__author-desc footer__author-desc--link" href="#">Разработано d-e-n.ru</a>

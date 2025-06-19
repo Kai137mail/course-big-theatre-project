@@ -2,18 +2,42 @@
 
 .partners {
     padding: 150px 0 0;
+    @include mixins.desctop-wide() {
+        padding: 187px 0 0;
+    }
+
 
     .patrners__title {
         margin: 0 0 60px;
     }
 
     .partners__list {
-        @include mixins.flex-space-between;
+        display: flex;
         margin: 0 0 113px;
+        justify-content: center;
+
+        @include mixins.desctop-wide() {
+            flex-wrap: wrap;
+        }
+    }
+
+    .partners__item:nth-of-type(n+2) {
+        margin-left: 78px;
+    }
+
+    .partners__item:nth-of-type(3n) {
+        @include mixins.desctop-wide() {
+            margin-left: 0;
+        }
+    }
+
+    .partners__item:nth-of-type(n+3) {
+        @include mixins.desctop-wide() {
+            margin-top: 60px;
+        }
     }
 
     .partners__btn {
         margin: 0 auto;
-        // @include mixins.flex-center;
     }
 }
