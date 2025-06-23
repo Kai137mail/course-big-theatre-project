@@ -5,11 +5,34 @@
     background: url("../../img/webp/big_theatre_fon.webp");
     background-color: $gray-bkg;
     padding: 50px 0 179px;
+    position: relative;
 
     @include mixins.desctop-wide() {
         padding: 50px 0 363px;
     }
+    @include mixins.tablet() {
+        padding: 50px 0 252px;
+    }
+    @include mixins.mobile() {
+        padding: 50px 0 85px;
+    }
 
+    .header__menu-btn {
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-size: cover;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        background-image: url("../../img/svg/menu.svg");
+        @include mixins.tablet() {
+            display: block;
+            margin: 0 0 107px;
+        }
+    }
 
     .header__nav-wrp {
         @include mixins.flex-space-between();
@@ -20,6 +43,42 @@
             letter-spacing: 0.05rem;
             margin: 0 0 260px;
         }
+        @include mixins.tablet() {
+            display: none;
+
+            &--open {
+                display: block;
+                position: absolute;
+                background: $dark-gray;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 300;
+                padding: 30px 47px 30px 39px;
+                margin: 0;
+            }
+        }
+        @include mixins.mobile() {
+            display: none;
+        }
+    }
+
+    .header__nav-wrp-close-btn {
+        display: none;
+        width: 32px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        // background-size: cover;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-left: auto;
+        margin-bottom: 78px;
+        background-image: url("../../img/svg/close.svg");
+        @include mixins.tablet() {
+            display: block;
+        }
     }
 
     .header__nav-list {
@@ -27,7 +86,11 @@
         @include mixins.desctop-wide() {
             justify-content: space-between;
             margin: 0 0 29px;
-        };
+        }
+        @include mixins.tablet() {
+            display: block;
+            margin-bottom: 45px;
+        }
     }
 
     .header__nav-link {
@@ -36,12 +99,21 @@
         @include mixins.desctop-wide() {
             @include mixins.font-mixin();
         }
+        @include mixins.tablet() {
+            @include mixins.font-mixin(24px);
+        }
     }
 
     .header__nav-item:nth-of-type(n+2) {
         margin-left: 63px;
         @include mixins.desctop-wide() {
             margin: 0;
+        }
+
+        @include mixins.tablet() {
+            &:nth-of-type(n+2) {
+                margin-top: 35px;
+            }
         }
     }
 
@@ -60,6 +132,9 @@
         @include mixins.desctop-wide() {
             padding: 0;
         }
+        @include mixins.tablet() {
+            width: 100%;
+        }
     }
 
     .header__title {
@@ -67,6 +142,9 @@
         @include mixins.font-mixin(64px);
         letter-spacing: 0.1rem;
         margin: 0 0 50px;
+        @include mixins.mobile() {
+            text-align: center;
+        }
     }
 
     .header__desc {
@@ -79,6 +157,13 @@
     .header__link-poster {
         width: 160px;
         min-height: 50px;
+
+        @include mixins.mobile() {
+            width: 505px;
+            min-height: 62px;
+            @include mixins.font-mixin(30px);
+            letter-spacing: 0.1rem;
+        }
     }
 
 
