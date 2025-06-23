@@ -23,12 +23,12 @@
     }
 }
 @mixin tablet {
-    @media (min-width: $tablet) {
+    @media (max-width: $tablet) {
         @content;
     }
 }
 @mixin mobile {
-    @media (min-width: $mobile) {
+    @media (max-width: $mobile) {
         @content;
     }
 }

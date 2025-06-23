@@ -6,12 +6,24 @@
     @include mixins.desctop-wide() {
         padding: 78px 0 0;
     }
+    @include mixins.tablet() {
+        padding: 90px 0 0;
+    }
+    @include mixins.mobile() {
+        padding: 26px 0 0;
+    }
 
     .projects__title {
         margin: 0 0 113px;
 
         @include mixins.desctop-wide() {
         margin: 0 0 94px;
+        }
+        @include mixins.tablet() {
+        margin: 0 0 60px;
+        }
+        @include mixins.mobile() {
+        margin: 0 0 20px;
         }
     }
 
@@ -34,6 +46,9 @@
         }
         &--goldgram1 {
             background-image: url("../../img/webp/gold_gram_1.webp");
+            @include mixins.mobile() {
+                display: none;
+            }
         }
         &--goldgram2 {
             background-image: url("../../img/webp/gold_gram_2.webp");
@@ -45,6 +60,14 @@
         @include mixins.desctop-wide() {
             width: 50%;
             min-height: 476px;
+        }
+        @include mixins.tablet() {
+            width: 50%;
+            min-height: 502px;
+        }
+        @include mixins.mobile() {
+            width: 100%;
+            min-height: 510px;
         }
     }
 
