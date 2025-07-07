@@ -36,9 +36,20 @@ textarea {
     resize: none;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    width: 90%;
+
     @include mixins.desctop-wide {
         max-width: 665px;
     }

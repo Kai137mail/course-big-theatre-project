@@ -3,7 +3,7 @@
 
 .stars {
     padding: 209px 25px 0;
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     @include mixins.desctop-wide() {
         padding: 125px 0 0;
@@ -11,7 +11,10 @@
     }
     @include mixins.tablet() {
         padding: 162px 0 0;
-        width: 100%;
+    }
+
+    @include mixins.mobile() {
+        padding: 30px 0 0;
     }
 
     .stars-wrp {
@@ -20,16 +23,31 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: 126px 165px;
-        @include mixins.flex-space-between;
-        @include mixins.tablet() {
-            padding: 126px 99px;
+        
+        // @include mixins.flex-space-between;
+        @include mixins.desctop-wide() {
+            padding: 126px 0;
+            // max-width: 655px;
+            // width: 90%;
+            // margin: 0 auto;
         }
         @include mixins.mobile() {
-            padding: 126px 76px;
-            text-align: center;
+            padding: 47px 0;
         }
     }
 
+    .stars-content-wrp {
+        max-width: 655px;
+        margin: 0 auto;
+        width: 90%;
+        @include mixins.flex-space-between;
+    }
+
+    .stars__year-list {
+        @include mixins.mobile() {
+            display: none;
+        }
+    }
     .stars__year-item {
         text-transform: uppercase;
         @include mixins.font-mixin(72px);
@@ -37,22 +55,25 @@
         color: $gold;
         margin: 0 0 25px;
 
-        @include mixins.mobile() {
-            display: none;
-        }
+        
     }
 
     .stars__content-wrp {
-        width: 540px;
+        // max-width: 540px;
+        width: 74%;
+        margin-left: 10%;
 
         @include mixins.desctop-wide() {
-            width: 457px;
+            // width: 457px;
+            width: 69.7%;
         }
         @include mixins.tablet() {
-            width: 388px;
+            // width: 388px;
+            width: 56.2%;
         }
         @include mixins.mobile() {
-            width: 441px;
+            // width: 441px;
+            width: 100%;
         }
     }
 
@@ -71,6 +92,11 @@
         }
     }
 
+    .stars__img-icon {
+        width: 50px;
+        height: 52px;
+    }
+
     .stars__title {
         font-family: $font-family;
         @include mixins.font-mixin(36px, 150%);
@@ -84,6 +110,9 @@
         }
         @include mixins.mobile() {
             @include mixins.font-mixin(40px, 150%);
+            font-family: $font-family;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
 

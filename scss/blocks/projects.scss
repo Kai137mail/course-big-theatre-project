@@ -43,15 +43,27 @@
 
         &--oscar {
             background-image: url("../../img/webp/oscar.webp");
+
+            @include mixins.retina {
+                background-image: url("../../img/webp/oscar_2x.webp");
+            }
         }
         &--goldgram1 {
             background-image: url("../../img/webp/gold_gram_1.webp");
+
+            @include mixins.retina {
+                background-image: url("../../img/webp/gold_gram_1_2x.webp");
+            }
             @include mixins.mobile() {
                 display: none;
             }
         }
         &--goldgram2 {
             background-image: url("../../img/webp/gold_gram_2.webp");
+
+            @include mixins.retina {
+                background-image: url("../../img/webp/gold_gram_2_2x.webp");
+            }
             @include mixins.desctop-wide() {
                 display: none;
             }
@@ -62,7 +74,6 @@
             min-height: 476px;
         }
         @include mixins.tablet() {
-            width: 50%;
             min-height: 502px;
         }
         @include mixins.mobile() {

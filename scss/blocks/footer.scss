@@ -15,7 +15,11 @@
 
     .footer__contacts-wrp {
         @include mixins.flex-space-between();
-        margin: 0 0 100px;
+            margin: 0 0 100px;
+
+        @include mixins.small-mobile() {
+            flex-direction: column;
+        }
     }
 
     .footer__title {
@@ -35,12 +39,28 @@
     .footer__contacts-list--tel {
         width: 40%;
         margin-right: 9%;
+
+        @include mixins.desctop-wide() {
+            width: 31%;
+        }
+        @include mixins.small-mobile() {
+            width: 100%;
+            margin: 0;
+            align-items: center;
+        }
     }
 
     .footer__contacts-list--address {
         width: 51%;
         @include mixins.desctop-wide() {
             align-items: end;
+        }
+        @include mixins.tablet() {
+            width: 60%;
+        }
+        @include mixins.small-mobile() {
+            width: 100%;
+            align-items: center;
         }
     }
 
