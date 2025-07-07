@@ -496,6 +496,11 @@ textarea {
 .about .digits__desc {
   margin: 15px 0 25px;
 }
+@media (max-width: 576px) {
+  .about .digits__item {
+    text-align: center;
+  }
+}
 .about .about__desc {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;

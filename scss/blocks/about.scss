@@ -105,6 +105,12 @@
         margin: 15px 0 25px;
     }
 
+    .digits__item {
+        @include mixins.mobile {
+            text-align: center;
+        }
+    }
+
     .about__desc {
         font-family: $font-family;
         @include mixins.font-mixin($line-height-param: 150%, $font-weight-param: 400);
