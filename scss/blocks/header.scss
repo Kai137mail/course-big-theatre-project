@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 .header {
-    background: url("../../img/webp/big_theatre_fon.webp");
+    background: url("../img/webp/big_theatre_fon.webp");
     background-color: $gray-bkg;
     padding: 50px 0 179px;
     position: relative;
@@ -11,31 +11,27 @@
     background-repeat: no-repeat;
 
     @include mixins.retina() {
-        background: url("../../img/webp/big_theatre_fon_2x.webp");
+        background: url("../img/webp/big_theatre_fon_2x.webp");
     }
 
     @include mixins.desctop-wide() {
         padding: 50px 0 363px;
     }
+
     @include mixins.tablet() {
         padding: 50px 0 252px;
     }
+
     @include mixins.mobile() {
         padding: 50px 0 85px;
     }
 
     .header__menu-btn {
-        display: none;
-        // width: 40px;
-        // height: 40px;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        background-color: transparent;
-        border: none;
         padding: 0;
-        // background-image: url("../../img/svg/menu.svg");
+
         @include mixins.tablet() {
+            background-color: transparent;
+            border: none;
             display: block;
             margin: 0 0 107px;
         }
@@ -46,33 +42,36 @@
         height: 40px;
     }
 
-    .header__nav-wrp {
-        @include mixins.flex-space-between();
+    .fluidwrp {
+        padding: 0;
+    }
+
+    .collapsewrp {
+        width: 100%;
+        justify-content: space-between;
         margin: 0 0 307px;
+        padding: 0;
+
         @include mixins.desctop-wide() {
             flex-direction: column;
-            @include mixins.font-mixin(16px);
-            letter-spacing: 0.05rem;
-            margin: 0 0 260px;
-        }
-        @include mixins.tablet() {
-            display: none;
+            align-items: flex-start;
 
-            &--open {
-                display: block;
-                position: absolute;
-                background: $dark-gray;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 300;
-                padding: 30px 47px 30px 39px;
-                margin: 0;
-            }
+            @include mixins.font-mixin(16px);
+                letter-spacing: 0.05rem;
+                margin: 0 0 260px;
         }
-        @include mixins.mobile() {
-            display: none;
+    }
+
+    .tabletwrp {
+        width: 100%;
+
+        @include mixins.tablet() {
+            width: 300px;
         }
+    }
+
+    .header__nav {
+        width: 100%;
     }
 
     .header__nav-wrp-close-btn {
@@ -80,17 +79,11 @@
         
         @include mixins.tablet() {
             display: block;
-            // width: 32px;
-            // height: 32px;
-            // background-repeat: no-repeat;
-            // background-position: center;
-            // background-size: cover;
             background-color: transparent;
             border: none;
             padding: 0;
             margin-left: auto;
             margin-bottom: 78px;
-            // background-image: url("../../img/svg/close.svg");
         }
     }
 
@@ -101,10 +94,12 @@
 
     .header__nav-list {
         display: flex;
+
         @include mixins.desctop-wide() {
             justify-content: space-between;
             margin: 0 0 29px;
         }
+
         @include mixins.tablet() {
             display: block;
             margin-bottom: 45px;
@@ -113,31 +108,40 @@
 
     .header__nav-link {
         text-transform: uppercase;
+
         @include mixins.font-mixin(18px);
+
         @include mixins.desctop-wide() {
             @include mixins.font-mixin();
         }
+
         @include mixins.tablet() {
             @include mixins.font-mixin(24px);
         }
     }
 
-    .header__nav-item:nth-of-type(n+2) {
-        margin-left: 63px;
-        @include mixins.desctop-wide() {
-            margin: 0;
-        }
+    .header__nav-item {
+        &:not(:first-child) {
+            margin-left: 7%;
+        
+            @include mixins.desctop-wide() {
+                margin-left: 0;
+            }
 
-        @include mixins.tablet() {
-            &:nth-of-type(n+2) {
+            @include mixins.tablet() {
                 margin-top: 35px;
             }
         }
     }
 
     .header__tel {
-        @include mixins.font-mixin();
+        white-space: nowrap;
         letter-spacing: 0.05rem;
+        text-align: end;
+        border-bottom: 2px solid $gold;
+        padding-bottom: 5px;
+
+        @include mixins.font-mixin();
     }
 
     .header__content-wrp {
@@ -145,23 +149,23 @@
     }
 
     .header__content {
-        // width: 540px;
         width: 48.6%;
         padding: 88px 0 0;
+
         @include mixins.desctop-wide() {
             padding: 0;
             width: 100%;
         }
-        // @include mixins.tablet() {
-        //     width: 100%;
-        // }
     }
 
     .header__title {
+        white-space: nowrap;
         text-transform: uppercase;
-        @include mixins.font-mixin(64px);
         letter-spacing: 0.1rem;
         margin: 0 0 50px;
+
+        @include mixins.font-mixin(64px);
+
         @include mixins.mobile() {
             text-align: center;
         }
@@ -169,9 +173,10 @@
 
     .header__desc {
         font-family: $font-family;
-        @include mixins.font-mixin(14px, 150%, 400);
         letter-spacing: 0rem;
         margin: 0 0 50px;
+
+        @include mixins.font-mixin(14px, 150%, 400);
     }
 
     .header__link-poster {
@@ -179,7 +184,6 @@
         min-height: 50px;
 
         @include mixins.mobile() {
-            // width: 505px;
             width: 100%;
             min-height: 62px;
             @include mixins.font-mixin(30px);
@@ -206,23 +210,30 @@
     }
 
     .header__slider-img {
-        // width: 370;
         width: 100%;
-        // height: 570;
         margin: 0 0 36px;
     }
 
     .header__btn-wrp {
         @include mixins.flex-space-between();
+
+        &-left {
+            cursor: pointer;
+        };
+
+        &-right {
+            cursor: pointer;
+        }
     }
 
     .header__btn {
         color: inherit;
-        padding: 0;
+        padding: 0 13px;
         border: none;
         background: transparent;
         text-transform: uppercase;
-        @include mixins.font-mixin(18px);
         letter-spacing: 0.1rem;
+
+        @include mixins.font-mixin(18px);
     }
 }

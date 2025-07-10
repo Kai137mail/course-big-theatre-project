@@ -6,9 +6,11 @@
     @include mixins.desctop-wide() {
         padding: 78px 0 0;
     }
+
     @include mixins.tablet() {
         padding: 90px 0 0;
     }
+
     @include mixins.mobile() {
         padding: 26px 0 0;
     }
@@ -19,21 +21,17 @@
         @include mixins.desctop-wide() {
         margin: 0 0 94px;
         }
+
         @include mixins.tablet() {
         margin: 0 0 60px;
         }
+
         @include mixins.mobile() {
         margin: 0 0 20px;
         }
     }
 
-
-    .projects__list {
-        display: flex;
-    }
-
     .projects__item {
-        width: 33%;
         min-height: 478px;
         padding: 34px;
         background-repeat: no-repeat;
@@ -42,49 +40,40 @@
         box-sizing: border-box;
 
         &--oscar {
-            background-image: url("../../img/webp/oscar.webp");
+            background-image: url("../img/webp/oscar.webp");
 
             @include mixins.retina {
-                background-image: url("../../img/webp/oscar_2x.webp");
+                background-image: url("../img/webp/oscar_2x.webp");
             }
         }
         &--goldgram1 {
-            background-image: url("../../img/webp/gold_gram_1.webp");
+            background-image: url("../img/webp/gold_gram_1.webp");
 
             @include mixins.retina {
-                background-image: url("../../img/webp/gold_gram_1_2x.webp");
+                background-image: url("../img/webp/gold_gram_1_2x.webp");
             }
+
             @include mixins.mobile() {
                 display: none;
             }
         }
         &--goldgram2 {
-            background-image: url("../../img/webp/gold_gram_2.webp");
+            background-image: url("../img/webp/gold_gram_2.webp");
 
             @include mixins.retina {
-                background-image: url("../../img/webp/gold_gram_2_2x.webp");
+                background-image: url("../img/webp/gold_gram_2_2x.webp");
             }
+
             @include mixins.desctop-wide() {
                 display: none;
             }
-        }
-
-        @include mixins.desctop-wide() {
-            width: 50%;
-            min-height: 476px;
-        }
-        @include mixins.tablet() {
-            min-height: 502px;
-        }
-        @include mixins.mobile() {
-            width: 100%;
-            min-height: 510px;
         }
     }
 
     .projects__item-title {
         text-transform: uppercase;
-        @include mixins.font-mixin(24px);
         letter-spacing: 0.05rem;
+
+        @include mixins.font-mixin(24px);
     }
 }

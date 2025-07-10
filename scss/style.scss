@@ -1,3 +1,5 @@
+@use "../css/bootstrap.css";
+
 @use "./variables.scss";
 
 @use "./fonts.scss";
@@ -11,7 +13,7 @@
 @use "./blocks/digits.scss";
 @use "./blocks/header.scss";
 @use "./blocks/about.scss";
-@use "./blocks/btn.scss";
+@use "./blocks/btnmy.scss";
 @use "./blocks/footer.scss";
 @use "./blocks/partners.scss";
 @use "./blocks/popup.scss";

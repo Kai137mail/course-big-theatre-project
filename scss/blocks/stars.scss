@@ -5,10 +5,12 @@
     padding: 209px 25px 0;
     max-width: 1110px;
     margin: 0 auto;
+
     @include mixins.desctop-wide() {
         padding: 125px 0 0;
         width: 100%;
     }
+
     @include mixins.tablet() {
         padding: 162px 0 0;
     }
@@ -24,13 +26,10 @@
         background-size: cover;
         padding: 126px 165px;
         
-        // @include mixins.flex-space-between;
         @include mixins.desctop-wide() {
             padding: 126px 0;
-            // max-width: 655px;
-            // width: 90%;
-            // margin: 0 auto;
         }
+
         @include mixins.mobile() {
             padding: 47px 0;
         }
@@ -40,6 +39,7 @@
         max-width: 655px;
         margin: 0 auto;
         width: 90%;
+
         @include mixins.flex-space-between;
     }
 
@@ -50,29 +50,26 @@
     }
     .stars__year-item {
         text-transform: uppercase;
-        @include mixins.font-mixin(72px);
         letter-spacing: 0.1rem;
         color: $gold;
         margin: 0 0 25px;
 
-        
+        @include mixins.font-mixin(72px);
     }
 
     .stars__content-wrp {
-        // max-width: 540px;
         width: 74%;
         margin-left: 10%;
 
         @include mixins.desctop-wide() {
-            // width: 457px;
             width: 69.7%;
         }
+
         @include mixins.tablet() {
-            // width: 388px;
             width: 56.2%;
         }
+
         @include mixins.mobile() {
-            // width: 441px;
             width: 100%;
         }
     }
@@ -84,30 +81,37 @@
         @include mixins.desctop-wide() {
             margin: 0 0 20px;
         }
+
         @include mixins.tablet() {
             margin: 0 0 49px;
         }
+
         @include mixins.mobile() {
             display: none;
         }
     }
+    
 
     .stars__img-icon {
         width: 50px;
         height: 52px;
+        margin-right: 2%;
     }
 
     .stars__title {
         font-family: $font-family;
-        @include mixins.font-mixin(36px, 150%);
         letter-spacing: 0rem;
+
+        @include mixins.font-mixin(36px, 150%);
 
         @include mixins.desctop-wide() {
             @include mixins.font-mixin(34px, 150%);
         }
+
         @include mixins.tablet() {
             @include mixins.font-mixin(29px, 150%);
         }
+        
         @include mixins.mobile() {
             @include mixins.font-mixin(40px, 150%);
             font-family: $font-family;
